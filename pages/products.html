@@ -1,0 +1,184 @@
+<html>
+
+  <head>
+    <!--Naming the title of the products page-->
+    <title> Our Products</title>
+    <meta name="description" content="Products Page">
+    <meta name="keywords" content="HTML,CSS,JS">
+    <meta name="author" content="Pratik Karanjit">
+    
+    <!--Linking external CSS-->
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://kit.fontawesome.com/fa73fba1ae.js" crossorigin="anonymous">
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <div class="header-wrapper">
+        <nav style="padding-left: 15%;">
+          <a class="logo" href="../index.html"><img src="../images/logo.png"></a>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li class="active"><a href="#">Products</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+          </ul>
+          <a class="cta" href="contact.html">Contact</a>
+          <div class="clock">
+            <img src="../images/clock.png" height="24" width="24">
+            <h3 id="current time"></h3>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!--Giving the header name-->
+    <h1 class="text">Our Bonsai Plants</h1>
+
+    <!--Creating a div named as class-->
+    <div class="cards">
+      <div class="card-item">
+        <img src="../images/Sshape.jpg" alt="A bonsai plant" width="300px" height="300px">
+        <h3>S-Shape Bonsai Plant</h3>
+        <strike>Rs 1499</strike>
+        <h2>Rs 1399</h2>
+        <button>ADD TO CART</button>
+        <a href="./contact.html"><button>BUY NOW</button></a>
+      </div>
+
+      <div class="card-item">
+        <img src="../images/ficus.png" alt="A ficus bonsai plant" width="300px" height="300px">
+        <h3>Ficus Bonsai</h3>
+        <strike>Rs 1200</strike>
+        <h2>Rs 1000</h2>
+        <button>ADD TO CART</button>
+        <a href="./contact.html"><button>BUY NOW</button></a>
+      </div>
+
+      <div class="card-item">
+        <img src="../images/juniper.jpg" alt="A ficus bonsai plant" width="300px" height="300px">
+        <h3>Juniper Bonsai Plant</h3>
+        <strike>Rs 1500</strike>
+        <h2>Rs 1200</h2>
+        <button>ADD TO CART</button>
+        <a href="./contact.html"><button>BUY NOW</button></a>
+      </div>
+    </div>
+
+    <div class="cards">
+      <div class="card-item">
+        <img src="../images/elm.jpg" alt="A bonsai plant" width="300px" height="300px">
+        <h3>Chinese Elm Bonsai Plant</h3>
+        <strike>Rs 1499</strike>
+        <h2>Rs 1399</h2>
+        <button>ADD TO CART</button>
+        <a href="./contact.html"><button>BUY NOW</button></a>
+      </div>
+
+      <div class="card-item">
+        <img src="../images/satsuki.jpeg" alt="A ficus bonsai plant" width="300px" height="300px">
+        <h3>Satsuki Bonsai Plant</h3>
+        <strike>Rs 1200</strike>
+        <h2>Rs 1000</h2>
+        <button>ADD TO CART</button>
+        <a href="./contact.html"><button>BUY NOW</button></a>
+      </div>
+
+      <div class="card-item">
+        <img src="../images/pom.jpg" alt="A ficus bonsai plant" width="300px" height="300px">
+        <h3>Pomegranate Bonsai Plant</h3>
+        <strike>Rs 1700</strike>
+        <h2>Rs 1500</h2>
+        <button>ADD TO CART</button>
+        <a href="./contact.html"><button>BUY NOW</button></a>
+      </div>
+    </div>
+
+    <div class="cards">
+      <div class="card-item">
+        <img src="../images/boxwood.jpg" alt="A bonsai plant" width="300px" height="300px">
+        <h3>Boxwood Bonsai Plant</h3>
+        <strike>Rs 1100</strike>
+        <h2>Rs 900</h2>
+        <button>ADD TO CART</button>
+        <a href="./contact.html"><button>BUY NOW</button></a>
+      </div>
+      <div class="card-item">
+        <img src="../images/jade.jpg" alt="A ficus bonsai plant" width="300px" height="300px">
+        <h3>Jade Bonsai</h3>
+        <strike>Rs 1300</strike>
+        <h2>Rs 1100</h2>
+        <button>ADD TO CART</button>
+        <a href="./contact.html"><button>BUY NOW</button></a>
+      </div>
+
+      <div class="card-item">
+        <img src="../images/bougainvillea.jpg" alt="A ficus bonsai plant" width="300px" height="300px">
+        <h3>Bougainvillea Bonsai Tree</h3>
+        <strike>Rs 2000</strike>
+        <h2>Rs 1700</h2>
+        <button>ADD TO CART</button>
+        <a href="./contact.html"><button>BUY NOW</button></a>
+      </div>
+    </div>
+
+    <!--Using internal CSS-->
+    <style>
+      .chaticon {
+        position: fixed;
+        bottom: 40px;
+        right: 20px;
+
+      }
+    </style>
+
+    <!--Div for chaticon-->
+    <div class="chaticon">
+      <a href="contact.html"><img src="../images/icon.png" width="50px" height="50px"></a>
+    </div>
+
+    <!--Creating footer-->
+    <footer>
+      <section style="background-color: rgb(61, 61, 57); height: auto;">
+        <div class="footer" style="max-width: 70%; margin: auto;">
+          <div class="col1">
+            <h3>USEFUL LINKS</h3>
+            <a href="products.html">Products</a>
+            <a href="blog.html">Blog</a>
+            <a href="aboutus.html">About</a>
+
+          </div>
+          <div class="col2">
+            <h3>NEWSLETTER</h3>
+            <form>
+              <input type="Email" placeholder="Your Email Address" required>
+              <br>
+              <button type="submit">SUBSCRIBE NOW</button>
+            </form>
+          </div>
+          <div class="col3">
+            <!--Using inline CSS-->
+            <h3 style="padding-right: 25px;">CONTACT</h3>
+            <P style="padding-right: 20px;">Opera Street, DurbarMarg,<br>Kathmandu,Nepal</P>
+            <div class="socialicons">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-whatsapp"></i>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </footer>
+    <script>
+      let time = document.getElementById("current time");
+      setInterval(() => {
+        let d = new Date();
+        time.innerHTML = d.toLocaleTimeString();
+      }, 1000)
+    </script>
+  </body>
+
+</html>

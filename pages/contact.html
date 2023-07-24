@@ -1,0 +1,197 @@
+<html>
+
+  <head>
+    <!--Meta Tags-->
+    <meta name="description" content="Contact Page">
+    <meta name="keywords" content="HTML,CSS,JS">
+    <meta name="author" content="Aayush Katwal">
+  
+    <title>Contact Page</title>
+    <script src="../JS/script.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!--Using Internal CSS-->
+    <style>
+      input[type=text],
+      input[type=email],
+      input[type=number],
+      select,
+      textarea {
+        border-radius: 5px;
+        border-style: none;
+        background-color: #f3f3f3;
+        color: black;
+        padding: 4px 4px;
+        box-sizing: border-box;
+        resize: vertical;
+      }
+
+      ::placeholder {
+        color: rgb(83, 26, 136);
+      }
+
+      input[type=submit] {
+        border-radius: 5px;
+        border-style: none;
+        background-color: #a1214a;
+        color: white;
+        padding: 4px 4px;
+        box-sizing: border-box;
+      }
+
+      input[type=submit]:hover {
+        background-color: rgb(19, 170, 19);
+      }
+
+      .chaticon {
+        position: fixed;
+        bottom: 40px;
+        right: 20px;
+
+      }
+    </style>
+    <script src="https://kit.fontawesome.com/fa73fba1ae.js" crossorigin="anonymous">
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <div class="header-wrapper">
+
+        <!--Navigation Bar-->
+        <nav style="padding-left: 15%;">
+          <a class="logo" href="../index.html"><img src="../images/logo.png"></a>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+          </ul>
+          <a class="ctaActive" href="#">Contact</a>
+          <div class="clock">
+            <img src="../images/clock.png" height="24" width="24">
+            <h3 id="current time"></h3>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <div class="flexContainer" style="margin-top:5%;">
+      <div class="feedbackForm" style="box-shadow: 0px 0px 20px 5px grey;">
+        <h1>Leave a feedback.</h1>
+
+        <!--FORM-->
+        <form name="feedback" onsubmit="validateForm()">
+
+          <div class="flexContainer">
+            <div class="flexLeft">
+              <label>First Name</label>
+              <br>
+              <input type="text" name="fname" placeholder="First Name">
+            </div>
+
+            <div class="flexRight">
+              <label>Last Name</label>
+              <br>
+              <input type="text" name="lname" placeholder="Last Name">
+            </div>
+          </div>
+          <br>
+
+          <label for="genders" style="padding: 5px;">Gender</label>
+          <select name="genders" id="genders">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="nonBinary">Non Binary</option>
+          </select>
+          <br>
+          <br>
+          <div class="flexContainer">
+            <div class="flexLeft">
+              <label>E-mail</label>
+              <br>
+              <input type="email" name="email" placeholder="E-mail">
+            </div>
+
+            <div class="flexRight">
+              <label>Phone Number</label>
+              <br>
+              <input type="number" name="phoneNumber" placeholder="Phone Number">
+            </div>
+          </div>
+
+          <br>
+          <label style="padding: 5px;">Feedback</label>
+          <br>
+          <textarea rows="10" cols="47" name="feedback" placeholder="Any feedbacks"></textarea>
+          <br>
+          <br>
+          <input type="submit" value="Submit Feedback">
+        </form>
+      </div>
+
+      <div class="contactInfo" style="box-shadow: 0px 0px 20px 5px grey;">
+        <h1>Contact Information</h1>
+        <p>Opera Street, DurbarMarg, <br>
+          Kathmandu, Nepal<br>
+        </p>
+        <p>Call Us: +977 9801234567</p>
+        <br>
+        <br>
+        <h2>Socials</h2>
+        <p><a href="#">Facebook</a> <a href="#">Instagram</a></p>
+      </div>
+    </div>
+
+    <!--Chaticon-->
+    <div class="chaticon">
+      <a href="contact.html"><img src="../images/icon.png" width="50px" height="50px"></a>
+    </div>
+
+    <!---footer starts-->
+    <footer>
+      <section style="background-color: rgb(61, 61, 57); height: auto; margin-top: 5%;">
+        <div class="footer" style="max-width: 70%; margin: auto;">
+          <div class="col1">
+            <h3>USEFUL LINKS</h3>
+            <a href="products.html">Products</a>
+            <a href="blog.html">Blog</a>
+            <a href="aboutus.html">About</a>
+
+          </div>
+          <div class="col2">
+            <h3>NEWSLETTER</h3>
+            <form>
+              <input type="Email" placeholder="Your Email Address" required>
+              <br>
+              <button type="submit">SUBSCRIBE NOW</button>
+            </form>
+          </div>
+          <div class="col3">
+            <h3 style="padding-right: 25px;">CONTACT</h3>
+            <P style="padding-right: 20px;">Opera Street, DurbarMarg, <br>Kathmandu, Nepal</P>
+            <div class="socialicons">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-whatsapp"></i>
+            </div>
+          </div>
+
+
+        </div>
+      </section>
+    </footer>
+
+    <!--Internal JavaScript-->
+    <script>
+      let time = document.getElementById("current time");
+      setInterval(() => {
+        let d = new Date();
+        time.innerHTML = d.toLocaleTimeString();
+      }, 1000)
+    </script>
+  </body>
+
+</html>

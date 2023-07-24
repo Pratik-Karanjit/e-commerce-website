@@ -1,0 +1,477 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: auto;
+  padding: 0;
+  box-sizing: border-box;
+  background: #f3f3f3;
+  font-family: 'Roboto', sans-serif;
+}
+
+.header-wrapper {
+  width: 100%;
+  background: lightgray;
+  height: 10vh;
+  background-position: center;
+}
+
+.logo img {
+  height: 60px;
+}
+
+nav {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+ul {
+  border-radius: 10px;
+  background-color: #f3f3f3;
+  width: 560px;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px 20px;
+}
+
+nav a {
+  /* max-width: fit-content; */
+  display: inline-block;
+  text-decoration: none;
+  font-size: 16px;
+  color: gray;
+  text-align: center;
+}
+
+nav a:hover {
+  /* max-width: fit-content; */
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+
+.active a {
+  max-width: fit-content;
+  display: inline-block;
+  text-decoration: none;
+  color: green;
+  text-align: center;
+}
+
+.cta {
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+  padding-top: 10px;
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  background: #a1214a;
+  transition: 0.3s ease;
+}
+
+.cta:hover {
+  color: white;
+  background-color: #711734;
+  transition: 0.3s ease;
+}
+
+.ctaActive {
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+  padding-top: 10px;
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  /* color:rgb(19, 170, 19); */
+  text-align: center;
+  background: green;
+}
+
+.feedbackForm {
+  flex: 50%;
+  margin-top: 20px;
+  margin-right: 20px;
+  max-width: fit-content;
+  /* margin-left: 350px; */
+  border-radius: 10px;
+  background-color: white;
+  color: black;
+  padding: 20px 20px;
+  box-sizing: border-box;
+}
+
+.contactInfo {
+  flex: 50%;
+  margin-top: 60px;
+  margin-bottom: 40px;
+  max-width: fit-content;
+  border-radius: 10px;
+  /* makes rounded edges */
+  background-color: white;
+  padding: 20px 20px;
+  box-sizing: border-box;
+  /* makes sure that padding and width stays is place  */
+}
+
+.flexContainer {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+  justify-content: space-evenly;
+}
+
+.flexLeft {
+  padding: 5px;
+  flex: 50%;
+}
+
+.flexRight {
+  padding: 5px;
+  flex: 50%;
+}
+
+/* Pratik */
+.text {
+  font-size: 25px;
+  text-align: center;
+  color: green;
+  padding-top: 20px;
+}
+
+.cards {
+  display: flex;
+  gap: 10rem;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+
+.card-item {
+  text-align: center;
+  width: 300px;
+  background-color: white;
+  border: 1px solid #ededed;
+  border-radius: 7px;
+}
+
+.card-item:hover {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 4px;
+}
+
+
+.aboutus1 {
+  display: flex;
+
+  gap: 10rem;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+
+.aboutuscards {
+  text-align: center;
+
+  width: 300px;
+  background-color: white;
+  border: 1px solid #ededed;
+  border-radius: 7px;
+}
+
+.aboutuscards:hover {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 4px;
+}
+
+.aboutusimages {
+  /* width:200px ;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: right;
+  background-color: white; */
+  padding: 25px 0;
+}
+
+.aboutusimages img {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.card-item strike {
+  color: red;
+}
+
+.card-item h2 {
+  margin-top: 3px;
+}
+
+.card-item button {
+  height: 3rem;
+  width: 85%;
+  margin-bottom: 1rem;
+  background: #a1214a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.card-item button:hover {
+  color: white;
+  background-color: #711734;
+  transition: 0.3s ease;
+}
+
+.footer {
+  padding: 10, 10;
+  color: bisque;
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+
+.footer div {
+  text-align: center;
+}
+
+.col2 {
+  flex-grow: 2;
+}
+
+.footer div h3 {
+  font-weight: 300;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  padding: 10px;
+}
+
+.col1 a {
+  display: block;
+  text-decoration: none;
+  color: aliceblue;
+  margin-bottom: 10px;
+}
+
+form input {
+  width: 400px;
+  height: 45px;
+  border-radius: 4px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  outline: none;
+  border: none;
+}
+
+form button {
+  background: transparent;
+  border: 2px;
+  color: #fff;
+  border-radius: 30px;
+  padding: 10px 30px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.socialicons {
+  margin-top: 20px;
+}
+
+.socialicons i {
+  font-size: 22px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+/* Khusi */
+.bonsai h3 {
+  text-align: right;
+  padding: 0;
+}
+
+/* css for 'lets talk' button */
+.bonsai-text button {
+  background: #a1214a;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 13px 30px;
+  border-radius: 30px;
+  font-size: 16px;
+
+}
+
+.bonsai-text button:hover {
+  transform: translateY(-10px);
+}
+
+/*  css for about div*/
+.about {
+  width: 550px;
+  height: 320px;
+  display: inline-block;
+  border-radius: 10px;
+  padding: 15px 25px;
+  box-sizing: border-box;
+  cursor: pointer;
+  background-color: white;
+  background-position: center;
+  background-size: cover;
+  transition: 0.5s;
+  transform: 0.5s;
+  color: black;
+}
+
+.about:hover {
+  transform: translateY(-10px);
+}
+
+/*  css for section footer*/
+
+.footer {
+  padding: 10, 10;
+  color: bisque;
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+
+.footer div {
+  text-align: center;
+}
+
+.col2 {
+  flex-grow: 2;
+}
+
+.footer div h3 {
+  font-weight: 300;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  padding: 10px;
+}
+
+.col1 a {
+  display: block;
+  text-decoration: none;
+  color: aliceblue;
+  margin-bottom: 10px;
+}
+
+form input {
+  width: 400px;
+  height: 45px;
+  border-radius: 4px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  outline: none;
+  border: none;
+}
+
+form button {
+  background: transparent;
+  border: 2px;
+  color: #fff;
+  border-radius: 30px;
+  padding: 10px 30px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.socialicons {
+  margin-top: 20px;
+}
+
+.socialicons i {
+  font-size: 22px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.clock {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  color: rgb(42, 42, 42);
+}
+
+.button-about {
+  width: 50%;
+  height: 40px;
+  background-color: #a1214a;
+  border-radius: 7px;
+  border: none;
+  color: white;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Research Page */
+.researchContainer {
+  max-width: 96%;
+  padding: 10px;
+  background-color: white;
+}
+
+.rImg {
+  max-width: 1200px;
+  align-items: center;
+  box-shadow: 0px 0px 3px 3px black;
+}
+.rImg2 {
+  max-width: 1400px;
+  align-items: center;
+  box-shadow: 0px 0px 3px 3px black;
+}
+
+Table,
+th,
+td {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  border-collapse: collapse;
+  padding: 10px;
+  box-sizing: border-box;
+  min-width: 200px;
+}
+/* .col{
+  min-width: 400px;
+} */
+
+.try{
+  display: flex;
+  flex: wrap;
+  justify-content: space-between;
+  padding: 10px;
+}
+.t1{
+  display: flex;
+  flex:30%;
+  align-self: center;
+  padding: 8%;
+}
+.t2{
+  display: flex;
+  flex:70%;
+  padding: 10px;
+}
